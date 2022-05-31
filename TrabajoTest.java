@@ -54,4 +54,18 @@ class TrabajoTest {
 		assertEquals(true, esMayor);
 	}
 
+	
+	@Test
+	@DisplayName("Sacar un triangulo isosceles de forma correcta")
+	void testTipoTriangulo2() {
+		String tipoTriangulo = t.tipoTriangulo(7, 7, 9);
+		assertEquals("isoceles", tipoTriangulo);
+	}
+	
+	@Test
+	@DisplayName("Comprobar el aumento de un valor de forma correcta")
+	void testAumentoTotal2() {
+		double aumentoTotal = t.aumentoTotal(100, 20);
+		assertEquals(120, aumentoTotal);
+	}
 }
