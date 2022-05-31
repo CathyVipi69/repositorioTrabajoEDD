@@ -23,7 +23,7 @@ public class Trabajo {
 	}
 	
 	public double aumentoTotal(int cantidad, int porcentaje) {
-		return cantidad *(1+porcentaje/100);
+		return ((cantidad * (porcentaje / 100)) + cantidad) + porcentaje;
 	}
 	
 	public boolean esMayor(int valor1, int valor2) {
